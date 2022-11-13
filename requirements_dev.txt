@@ -3,3 +3,4 @@ unittest
 black
 isort
 flake
+mypy

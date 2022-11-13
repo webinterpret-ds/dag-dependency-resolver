@@ -20,7 +20,7 @@ class DependencyGraph:
         self.nodes[name] = Node(name=name, parents=parents)
 
     def get_dependencies_order(self) -> List[str]:
-        dependencies_order = []
+        dependencies_order: List[str] = []
 
         for node in self.nodes.values():
             self._solve_deps(node, dependencies_order)

@@ -5,14 +5,14 @@ from src.node import Node
 
 
 class TestStringMethods(unittest.TestCase):
-    def setUp(self):
+    def setUp(self) -> None:
         self.dependency_graph = DependencyGraph()
 
-    def test_add_node(self):
+    def test_add_node(self) -> None:
         self.dependency_graph.add_node(name="test_node", parents=["a", "b"])
         assert self.dependency_graph.nodes == {"test_node": Node(name="test_node", parents=["a", "b"])}
 
-    def test_get_dependencies_order(self):
+    def test_get_dependencies_order(self) -> None:
         self.dependency_graph.add_node(name="a", parents=["b", "c"])
         self.dependency_graph.add_node(name="b", parents=[])
         self.dependency_graph.add_node(name="c", parents=[])
