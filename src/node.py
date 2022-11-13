@@ -2,7 +2,10 @@ from dataclasses import (
     dataclass,
     field,
 )
-from typing import Text, List
+from typing import (
+    List,
+    Text,
+)
 
 from src.enums.node_status import NodeStatus
 
@@ -11,4 +14,4 @@ from src.enums.node_status import NodeStatus
 class Node:
     name: Text
     parents: List[str] = field(default_factory=list)
-    status: NodeStatus = field(default=NodeStatus.NOT_VISITED)
+    status: NodeStatus = field(default=NodeStatus.UNVISITED)

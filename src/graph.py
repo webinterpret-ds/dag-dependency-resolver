@@ -39,4 +39,4 @@ class DependencyGraph:
 
     def _reset_nodes_status(self) -> None:
         for node in self.nodes.values():
-            node.status = NodeStatus.NOT_VISITED
+            node.status = NodeStatus.UNVISITED

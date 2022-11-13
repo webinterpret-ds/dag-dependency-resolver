@@ -6,4 +6,4 @@ from enum import (
 
 class NodeStatus(Enum):
     VISITED = auto()
-    NOT_VISITED = auto()
+    UNVISITED = auto()
