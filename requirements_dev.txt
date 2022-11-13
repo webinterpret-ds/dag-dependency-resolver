@@ -1,0 +1,5 @@
+pytest==7.1.2
+unittest
+black
+isort
+flake
